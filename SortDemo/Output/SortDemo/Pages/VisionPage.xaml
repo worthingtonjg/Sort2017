@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="SortDemo.Pages.VisionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SortDemo.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="14">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Background="DarkGray">
+            <TextBlock FontSize="18" Margin="10" FontWeight="Bold" HorizontalAlignment="Left">Vision</TextBlock>
+        </Border>
+
+        <SplitView x:Name="MySplitView" Grid.Row="1" IsPaneOpen="False" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="220">
+            <SplitView.Pane>
+                <StackPanel Background="WhiteSmoke">
+                    <Button x:Name="HamburgerButton" Foreground="Black" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+                    <!-- Image analyzer -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="ImageAnalyzer_Click">
+                            <Image Source="ms-appx:///Assets/image.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Image Analyzer" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Image analyzer -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="FaceAnalyzer_Click">
+                            <Image Source="ms-appx:///Assets/face.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Face Analyzer" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Celebrity analyzer -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="CelebrityIdentifier_Click">
+                            <Image Source="ms-appx:///Assets/celebrity.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Celebrity Identifier" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Prophet analyzer -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="ProphetIdentifier_Click">
+                            <Image Source="ms-appx:///Assets/prophet.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="LDS Leader Identifier" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Person analyzer -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="PersonIdentifier_Click">
+                            <Image Source="ms-appx:///Assets/identity.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Person Identifier" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Take a photo -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="TakePhoto_Click">
+                            <Image Source="ms-appx:///Assets/object.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Object Identifier" FontSize="18" Foreground="Black" VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>    
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame x:Name="NavigationFrame"></Frame>
+            </SplitView.Content>
+            
+        </SplitView>
+    </Grid>
+</Page>

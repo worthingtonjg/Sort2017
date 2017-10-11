@@ -1,0 +1,17 @@
+C:\Code\worthingtonjg\SortDemo\Output\Common\bin\x86\Debug\Common.dll
+C:\Code\worthingtonjg\SortDemo\Output\Common\bin\x86\Debug\Common.pdb
+C:\Code\worthingtonjg\SortDemo\Output\Common\bin\x86\Debug\Common.pri
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\Common.dll
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\Common.pdb
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\priconfig.xml
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\priconfig.xml.intermediate
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\layout.resfiles
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\layout.resfiles.intermediate
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\resources.resfiles
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\resources.resfiles.intermediate
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\pri.resfiles
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\pri.resfiles.intermediate
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\qualifiers.txt
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Code\worthingtonjg\SortDemo\Output\Common\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

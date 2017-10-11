@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="SortDemo.Pages.Speech.BotPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SortDemo.Pages.Speech"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Background="DarkRed">
+            <TextBlock FontSize="18" Margin="10" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White" TextWrapping="Wrap">QnA Maker</TextBlock>
+        </Border>
+
+        <StackPanel Grid.Row="1" Margin="10" Orientation="Vertical">
+            <ComboBox x:ConnectionId='2' x:Name="BotsCombo" HorizontalAlignment="Stretch" Margin="0,0,0,3"                                              >
+                <ComboBox.Items>
+                    <ComboBoxItem>Mormon News Room</ComboBoxItem>
+                    <ComboBoxItem>Articles of Faith</ComboBoxItem>
+                    <ComboBoxItem>NavigationAI</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <TextBlock>Question:</TextBlock>
+            <TextBox x:ConnectionId='3' x:Name="Question" Height="200" Margin="0,0,0,3" TextWrapping="Wrap"></TextBox>
+            <Button x:ConnectionId='4'                    HorizontalAlignment="Stretch" Margin="0,0,0,3">Send</Button>
+            <TextBlock>Answer:</TextBlock>
+            <TextBox x:ConnectionId='5' x:Name="Answer" Height="200" Margin="0,0,0,3" TextWrapping="Wrap"></TextBox>
+        </StackPanel>
+
+        <Grid x:ConnectionId='1' x:Name="Thinking" Grid.RowSpan="4" Background="#eeffffff" Visibility="Collapsed">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" FontSize="18" FontWeight="Bold" TextWrapping="Wrap">Thinking ...</TextBlock>
+        </Grid>
+    </Grid>
+</Page>
+

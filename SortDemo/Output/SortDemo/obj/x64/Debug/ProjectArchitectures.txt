@@ -1,0 +1,5 @@
+C:\Code\worthingtonjg\SortDemo\Output\Common\Common.csproj;x64
+C:\Code\worthingtonjg\SortDemo\Output\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x64
+C:\Code\worthingtonjg\SortDemo\Output\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x64
+C:\Code\worthingtonjg\SortDemo\Output\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x64
+C:\Code\worthingtonjg\SortDemo\Output\SortDemo\SortDemo.csproj;x64

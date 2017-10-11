@@ -1,0 +1,65 @@
+﻿<UserControl
+    x:Class="SortDemo.Views.XamlControls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SortDemo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500"
+    d:DesignWidth="400">
+
+    <Grid>
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150">
+            <SplitView.Pane>
+                <StackPanel Background="Black">
+                    <Button x:Name="HamburgerButton" Foreground="White" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+
+                    <!-- Speech -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="Speech_Click">
+                            <Image Source="ms-appx:///Assets/speech.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Speech" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Vision -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="VisionButton_Click">
+                            <Image Source="ms-appx:///Assets/vision.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Vision" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+                    
+                    <!-- Language -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="Language_Click">
+                            <Image Source="ms-appx:///Assets/language.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Language" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Knowledge -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="Knowledge_Click">
+                            <Image Source="ms-appx:///Assets/knowledge.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Knowledge" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <!-- Search -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="50" Height="50" Background="Transparent" Click="Search_Click">
+                            <Image Source="ms-appx:///Assets/search.png" Width="20"></Image>
+                        </Button>
+                        <TextBlock Text="Search" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame x:Name="NavigationFrame"></Frame>
+            </SplitView.Content>
+        </SplitView>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="SortDemo.Pages.Vision.TakePhotoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SortDemo.Pages.Vision"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Background="DarkRed">
+            <TextBlock FontSize="18" Margin="10" FontWeight="Bold" HorizontalAlignment="Center" Foreground="White">Photo Capture</TextBlock>
+        </Border>
+
+        <StackPanel Grid.Row="1" Margin="10" Orientation="Vertical">
+            <CaptureElement x:ConnectionId='4' x:Name="PreviewControl" HorizontalAlignment="Stretch" Height="300"></CaptureElement>
+            <Button x:ConnectionId='5' x:Name="TakePhotoButton" HorizontalAlignment="Stretch" Background="LightGray"                              >Take Photo</Button>
+        </StackPanel>
+
+        <ScrollViewer x:ConnectionId='1' x:Name="ImageZoom" Grid.Row="2" ZoomMode="Enabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Background="WhiteSmoke" Margin="10,0">
+            <Image x:ConnectionId='3' x:Name="ImageDisplay" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </ScrollViewer>
+
+        <Grid x:ConnectionId='2' x:Name="Thinking" Grid.RowSpan="4" Background="#eeffffff" Visibility="Collapsed">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" FontSize="18" FontWeight="Bold">Thinking ...</TextBlock>
+        </Grid>
+    </Grid>
+
+</Page>
+
