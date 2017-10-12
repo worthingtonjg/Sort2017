@@ -3,13 +3,18 @@
 This code was used in a presentation I gave on Artificial Intelligence and Azure Cognitive Services.  
 
 - Presentation.zip includes my powerpoint and videos of my demo that I took just in case I didn't have internet access
-- SortDemo\ is the code for the project.  
+- SortDemo\ is the code for the project, this is the Unity code
+- SortDemo\Output\ is the code for the UWP project --> this is where you want to look first
 
 Please note that this is a Unity project.  You do NOT need to open it in Unity unless you want to change the 3D model or something Unity related.  Instead you need to open the Output\ folder and open the solution there.  This is the UWP project that was generated from Unity.  This is the UWP application that you will need to run.  
 
 This project is interesting because I did most my code in the UWP portion of the application.  So you will need to make changes to the code in the Output folder to make things work for you.  
 
 See below for some instructions.
+
+## License
+
+You are free to use this code anyway you want to.  However the Salsa library in Unity is NOT open source.  If you are going to use this, you need to purchase a license for yourself of this software.  It is awesome and only costs $35.  It is what makes the 3D model speak in sync with the audio that is playing and is well worth the money.
 
 ## Getting Started Azure
 
